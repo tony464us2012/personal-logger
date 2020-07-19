@@ -1,5 +1,5 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
 import { deleteLog, setCurrent } from '../../actions/logActions';
 import Moment from 'react-moment';
 import PropTypes from 'prop-types';
@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 
 const LogItem = ({ log, deleteLog, setCurrent }) => {
 
-    const {_id, message, attention, date, tech } = log;
+    const { _id, message, attention, date, tech } = log;
 
     return (
         <li className="collection-item">

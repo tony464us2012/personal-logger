@@ -1,13 +1,11 @@
 import React, {  useEffect } from 'react';
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
 import LogItem from './LogItem';
 import PreLoader from '../layout/PreLoader';
 import PropTypes from 'prop-types';
 import { getLogs } from '../../actions/logActions'
 
 const Logs = ({ log: { logs, loading }, filtered, getLogs }) => {
-   
-
 
     useEffect(() => {
         getLogs()
@@ -33,6 +31,7 @@ const Logs = ({ log: { logs, loading }, filtered, getLogs }) => {
 Logs.propTypes = {
     log: PropTypes.object.isRequired,
     getLogs: PropTypes.func.isRequired,
+    filtered: PropTypes.object
 }
 
 const mapStateToProps = state => ({

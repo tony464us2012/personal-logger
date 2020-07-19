@@ -4,6 +4,7 @@ import { deleteTech } from '../../actions/techActions';
 import PropTypes from 'prop-types'
 
 const TechItem = ({ tech, deleteTech }) => {
+    
     const { firstName, lastName, _id } = tech;
 
     return (

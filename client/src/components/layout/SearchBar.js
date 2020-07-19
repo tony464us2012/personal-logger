@@ -23,9 +23,7 @@ const SearchBar = ({ searchLogs }) => {
                     </div>
                 </form>
             </div>
-
         </nav>
-
     )
 }
 

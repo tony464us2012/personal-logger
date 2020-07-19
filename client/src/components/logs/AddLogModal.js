@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
 import { addLogs } from '../../actions/logActions';
 import PropTypes from 'prop-types';
 import M from 'materialize-css/dist/js/materialize.min.js'
@@ -28,11 +28,10 @@ const AddLogModal = ({ addLogs, techs }) => {
             setAttention(false)
         }
     }
-
     return (
         <div id='add-log-modal' className='modal' style={modalStyle}>
             <div className="modal-content">
-                <h4>Enter System Log</h4>
+                <h4>Enter Log</h4>
                 <div className="row">
                     <div className="input-field">
                         <input type="text" name='message' value={message} onChange={e => setMessage(e.target.value)}/>
@@ -43,7 +42,8 @@ const AddLogModal = ({ addLogs, techs }) => {
                     <div className="input-field">
                         <select name="tech" value={tech} className='browser-default' onChange={e => setTech(e.target.value)}>
                             <option value='' disabled>Select Logger</option>
-    { techs === null || techs.length === 0 ? (<option disabled>No Logger On File</option>) : (techs.map(tech => <option key={tech._id} value={tech.firstName + ' ' + tech.lastName}>{tech.firstName + ' ' + tech.lastName}</option>))}
+                            { techs === null || techs.length === 0 ? (<option disabled>No Logger On File</option>) 
+                            : (techs.map(tech => <option key={tech._id} value={tech.firstName + ' ' + tech.lastName}>{tech.firstName + ' ' + tech.lastName}</option>))}
                         </select>
                     </div>
                 </div>
@@ -66,7 +66,7 @@ const AddLogModal = ({ addLogs, techs }) => {
 }
 
 AddLogModal.propTypes = {
-    addLog: PropTypes.func,
+    addLog: PropTypes.func.isRequired,
     techs: PropTypes.array,
 
      

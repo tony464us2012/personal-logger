@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
 import { clearCurrent, editLog } from '../../actions/logActions'
 import PropTypes from 'prop-types'
 import M from 'materialize-css/dist/js/materialize.min.js'
 
-const EditLogModal = ({current, loading, clearCurrent, editLog, techs}) => {
+const EditLogModal = ({ current, loading, clearCurrent, editLog, techs }) => {
 
     const [message, setMessage] = useState('');
     const [attention, setAttention] = useState(false);

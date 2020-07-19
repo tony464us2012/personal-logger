@@ -6,8 +6,6 @@ const path = require('path');
 
 connectDB()
 
-
-
 //Init Middleware
 app.use(cors())
 app.use(express.urlencoded({ limit: '50mb', extended: false }));

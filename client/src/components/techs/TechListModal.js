@@ -4,15 +4,12 @@ import { getTechs } from '../../actions/techActions';
 import TechItem from './TechItem';
 import PropTypes from 'prop-types';
 
-const TechListModal = ({techs: {techs}, getTechs}) => {
+const TechListModal = ({techs: { techs }, getTechs}) => {
     
     useEffect(() => {
         getTechs();
         //eslint-disable-next-line
     },[]);
-
-
-
 
     return (
         <div id="tech-list-modal" className="modal">

@@ -36,14 +36,10 @@ router.post('/', async (req, res) => {
 
 router.put('/:id', async (req, res) => {
     const{ message, attention, tech, date } = req.body;
+    
     //Build contact object
 
-    const logFields = {
-        message,
-        attention,
-        tech,
-        date
-    };
+    const logFields = { message, attention, tech, date };
 
     try {
         let log = await Log.findOne({ _id: req.params.id });
@@ -58,6 +54,7 @@ router.put('/:id', async (req, res) => {
 });
 
 router.delete('/:id', async (req, res) => {
+    
     try {
         let log = await Log.findById(req.params.id);
 
