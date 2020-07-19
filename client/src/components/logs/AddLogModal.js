@@ -42,8 +42,8 @@ const AddLogModal = ({ addLogs, techs }) => {
                 <div className="row">
                     <div className="input-field">
                         <select name="tech" value={tech} className='browser-default' onChange={e => setTech(e.target.value)}>
-                            <option value='' disabled>Select Technician</option>
-    { techs === null || techs.length === 0 ? (<option disabled>No Technicians On File</option>) : (techs.map(tech => <option key={tech._id} value={tech.firstName + ' ' + tech.lastName}>{tech.firstName + ' ' + tech.lastName}</option>))}
+                            <option value='' disabled>Select Logger</option>
+    { techs === null || techs.length === 0 ? (<option disabled>No Logger On File</option>) : (techs.map(tech => <option key={tech._id} value={tech.firstName + ' ' + tech.lastName}>{tech.firstName + ' ' + tech.lastName}</option>))}
                         </select>
                     </div>
                 </div>

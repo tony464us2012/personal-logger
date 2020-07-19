@@ -28,7 +28,7 @@ const AddTechModal = ( {addTech}) => {
     return (
         <div id='add-tech-modal' className='modal' style={modalStyle}>
             <div className="modal-content">
-                <h4>Enter Technician</h4>
+                <h4>Enter Logger</h4>
                 <div className="row">
                     <div className="input-field">
                         <input type="text" name='firstName' value={firstName} onChange={e => setFirstName(e.target.value)}/>
