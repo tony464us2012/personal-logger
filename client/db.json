@@ -1,0 +1,42 @@
+{
+  "logs": [
+    {
+      "id": 1,
+      "message": "Changed hard drive on workspation 005",
+      "attention": false,
+      "date": "03-02-2019",
+      "tech": "Sam Smith"
+    },
+    {
+      "id": 2,
+      "message": "Work station 007 is fixed",
+      "attention": false,
+      "tech": "John Doe",
+      "date": "2020-07-15T02:41:54.381Z"
+    },
+    {
+      "message": "Work station 200 has been broken",
+      "attention": true,
+      "tech": "Anthony Castro",
+      "date": "2020-07-17T00:42:31.733Z",
+      "id": 5
+    }
+  ],
+  "techs": [
+    {
+      "id": 2,
+      "firstName": "Sarah",
+      "lastName": "Wilson"
+    },
+    {
+      "firstName": "Anthony",
+      "lastName": "Castro",
+      "id": 3
+    },
+    {
+      "firstName": "John",
+      "lastName": "Montana",
+      "id": 4
+    }
+  ]
+}
